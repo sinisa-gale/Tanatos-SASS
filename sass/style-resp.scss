@@ -1,0 +1,565 @@
+/* RESPONSIVE */
+@media screen and (min-width: 0) {
+	/*BANNER*/
+	header {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	h4 {
+		font-size: 1.5625rem;
+	}
+
+	.header-btn {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		flex-flow: column
+	}
+
+	.header-container .header-btn .button {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+	}
+
+	.down-arrow {
+		margin-top: 20px;
+	}
+	/*SERVICES*/
+	.services, .contact, .clients, .team, .newsletter, .works {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.services {
+		flex-direction: column;
+		div {
+			margin-bottom: 30px;
+			width: 100%;
+		}
+		h4 {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		span {
+			padding: 20px;
+		}
+	}
+
+	/*NEWSLETTER*/
+	.newsletter {
+		form {
+			flex-direction: column;
+			div {
+				width: 66.66667%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		a {
+			margin-top: 20px;
+			max-width: 200px;
+		}
+	}
+
+	/*WORKS*/
+	.works {
+		h4 {
+			font-size: 24px;
+		}
+		.items {
+			margin-top: 16px;
+		}
+		.overlay {
+			h3 {
+				font-size: 16px;
+			}
+			a {
+				margin-top: 10px;
+				padding: 10px 30px;
+			}
+		}
+		&>div:first-child p {
+			margin-bottom: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&>div:last-child a {
+			margin-top: 45px;
+			padding: 10px 30px;
+		}
+	}
+
+	/*CLIENTS*/
+	.clients {
+		&>div {
+			height: 410px;
+		}
+		.arrows {
+			margin-top: 10rem;
+		}
+		.testimonial p:nth-child(2) {
+			margin-top: 20px;
+			margin-bottom: 15px;
+			font-size: 18px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+
+	/*TEAM*/
+	.team {
+		&>div h4 {
+			font-size: 24px;
+		}
+		&>div:first-child p {
+			margin-bottom: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.members .person {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.person {
+			h3 {
+				margin-top: 10px;
+				font-size: 16px;
+			}
+			.soc-icon {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+		}
+		.nav-buttons {
+			margin-top: 30px;
+		}
+	}
+
+	/*CONTACT*/
+	.contact {
+		h4 {
+			font-size: 24px;
+		}
+		p {
+			margin-bottom: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		form {
+			.medium {
+				width: 100%;
+			}
+			.soc-icon {
+				width: 100%;
+				margin-top: 30px;
+			}
+		}
+		.text-area {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.button-hire {
+			width: 100%;
+		}
+	}
+
+	footer {
+		.flex-container {
+			display: block;
+		}
+		p {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 639px) {
+	.clients {
+		&>div {
+			height: 300px;
+		}
+		.arrows {
+			margin-top: 7rem;
+		}
+	}
+}
+
+@media screen and (min-width: 530px) and (max-width: 639px) {
+	.team .members .person {
+		padding-left: 3px;
+		padding-right: 0;
+		&:nth-child(2n+1) {
+			margin-left: auto;
+			margin-right: 1%;
+		}
+		&:nth-child(2n) {
+			margin-left: 1%;
+			margin-right: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 840px) {
+	.team .members .person {
+		padding-left: 10px;
+		padding-right: 0;
+		&:nth-child(2n+1) {
+			margin-left: auto;
+			margin-right: 3%;
+		}
+		&:nth-child(2n) {
+			margin-left: 3%;
+			margin-right: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+	.services div {
+		margin-bottom: 40px;
+	}
+
+	.contact p, .works > div:first-child p {
+		margin-bottom: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	/*BANNER*/
+	header {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.header-container {
+		margin-top: 130px;
+		margin-bottom: 130px;
+		h1 {
+			font-size: 46px;
+		}
+		p {
+			font-size: 18px;
+		}
+		.header-btn .button {
+			margin-left: 0;
+			margin-right: 30px;
+			margin-bottom: 1px;
+		}
+	}
+
+	.header-btn {
+		margin-top: 40px;
+		margin-left: 25%;
+		flex-flow: row;
+	}
+
+	.down-arrow {
+		margin-top: 20px;
+	}
+	/*SERVICES*/
+	.services, .contact, .clients, .team, .newsletter, .works {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.services {
+		flex-direction: row;
+		h4 {
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		span {
+			padding: 30px;
+		}
+	}
+
+	/*NEWSLETTER*/
+	.newsletter form {
+		flex-direction: row;
+		div {
+			&:first-child {
+				width: 58.33333%;
+				margin-right: -2rem;
+			}
+			&:last-child {
+				width: 25%;
+			}
+		}
+		a {
+			margin-top: 0;
+			max-width: 100%;
+		}
+	}
+
+	/*WORKS*/
+	.works {
+		h4 {
+			font-size: 28px;
+		}
+		.overlay {
+			.img-overlay {
+				height: 250px;
+			}
+			h3 {
+				font-size: 20px;
+			}
+			a {
+				margin-top: 20px;
+				padding: 13px 50px;
+			}
+		}
+		.items {
+			width: 50%;
+		}
+		&>div:last-child a {
+			margin-top: 70px;
+			padding: 13px 50px;
+		}
+	}
+
+	/*CLIENTS*/
+	.clients {
+		&>div {
+			height: 315px;
+		}
+		.arrows {
+			margin-top: 7rem;
+		}
+		.testimonial p:nth-child(2) {
+			margin-top: 35px;
+			margin-bottom: 20px;
+			font-size: 20px;
+		}
+	}
+
+	/*TEAM*/
+	.team {
+		&>div h4 {
+			font-size: 28px;
+		}
+		&>div:first-child p {
+			margin-bottom: 50px;
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		.person {
+			h3 {
+				margin-top: 16px;
+				font-size: 20px;
+			}
+			.soc-icon {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	/*CONTACT*/
+	.contact {
+		h4 {
+			font-size: 28px;
+		}
+		form {
+			margin-left: 70px;
+			margin-right: 70px;
+			.medium {
+				width: 43.7%;
+				display: inline-block;
+			}
+			div:first-child {
+				margin-right: auto;
+			}
+			a {
+				width: 100%;
+			}
+			.soc-icon {
+				width: 50%;
+				margin-top: 0;
+				text-align: right;
+				flex: auto;
+			}
+		}
+		.button-hire {
+			width: 33.33333%;
+			text-align: left;
+		}
+	}
+
+	footer {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		.flex-container {
+			display: flex;
+		}
+		p {
+			width: 50%;
+		}
+		div p {
+			&:first-child {
+				text-align: left;
+			}
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	header {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.services div {
+		width: 25%;
+	}
+
+	.contact form .medium {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 841px) and (max-width: 1024px) {
+	.team .members .person {
+		&:nth-child(2n+1) {
+			margin-left: auto;
+			margin-right: 10%;
+		}
+		&:nth-child(2n) {
+			margin-left: 10%;
+			margin-right: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header-container {
+		margin-top: 180px;
+		margin-bottom: 180px;
+		h1 {
+			font-size: 60px;
+		}
+		p {
+			font-size: 22px;
+		}
+	}
+
+	.header-btn {
+		margin-top: 60px;
+	}
+
+	.down-arrow {
+		margin-top: 100px;
+	}
+	/*SERVICES*/
+	.services, .contact, .clients, .team, .newsletter, .works {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.services div {
+		margin-bottom: 0;
+	}
+	/*NEWSLETTER*/
+	/*WORKS*/
+	.works {
+		h4 {
+			font-size: 35px;
+		}
+		.items {
+			width: 33.33333%;
+		}
+		.overlay h3 {
+			font-size: 23px;
+		}
+		&>div:last-child a {
+			margin-top: 100px;
+		}
+	}
+
+	/*CLIENTS*/
+	.clients {
+		&>div {
+			height: 325px;
+		}
+		.testimonial p:nth-child(2) {
+			margin-top: 45px;
+			margin-bottom: 35px;
+			font-size: 25px;
+		}
+	}
+
+	/*TEAM*/
+	.team {
+		&>div h4 {
+			font-size: 35px;
+		}
+		&>div:first-child p {
+			margin-top: 15px;
+			margin-bottom: 100px;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.person {
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			padding-right: 0;
+			h3 {
+				font-size: 23px;
+			}
+			.soc-icon {
+				margin-top: 25px;
+				margin-bottom: 25px;
+			}
+		}
+		.nav-buttons {
+			margin-top: 70px;
+		}
+	}
+
+	/*CONTACT*/
+	.contact {
+		h4 {
+			font-size: 35px;
+		}
+		form {
+			margin-left: 100px;
+			margin-right: 100px;
+			.medium {
+				width: 46%;
+			}
+			a {
+				margin-bottom: 30px;
+			}
+			.soc-icon {
+				width: 65%;
+				text-align: right;
+			}
+		}
+		.button-hire {
+			width: 25%;
+		}
+	}
+
+	.contact p, .works > div:first-child p {
+		margin-top: 15px;
+		margin-bottom: 100px;
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	footer {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+}
