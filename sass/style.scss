@@ -1,14 +1,5 @@
-$colorBlack: #0A0A0A;
-$colorWhite: #FFFFFF;
-$colorDirtyWhite: #FEFEFE;
-$colorOrange: #F7600E;
-$colorLightOrange: #E1580E;
-$colorBlue: #2BA6CB;
-$colorDarkGray: #3B434C;
-$colorModerateGray: #64686D;
-$colorLightGray: #CACACA;
-$colorVeryLightGray: #C6C8CB;
-$colorSteel: #C4C6C9;
+@import '_colorVariables';
+@import '_mixinTanatos';
 
 
 body {
@@ -31,15 +22,12 @@ p {
 }
 
 .banner {
-	background: url("../img/main-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+	@include imgBackground("../img/main-banner.jpg");
 }
 
 .row {
 	max-width: 62.5rem;
-	margin-left: auto;
-	margin-right: auto;
+	@include marginHorizontal(auto, auto);
 }
 
 .flex-container {
@@ -48,8 +36,7 @@ p {
 
 .column {
 	width: 50%;
-	padding-right: 0.9375rem;
-	padding-left: 0.9375rem;
+	@include paddingHorizontal(0.9375rem, 0.9375rem);
 }
 
 .text-color-white {
@@ -59,8 +46,7 @@ p {
 h4 {
 	line-height: 1.4;
 	font-size: 1.125rem;
-	margin-top: 0;
-	margin-bottom: 0.5rem;
+	@include marginVertical(0, 0.5rem);
 }
 
 .orange-color {
@@ -140,17 +126,15 @@ h4 {
 	}
 }
 
-.header-btn, footer p {
-	padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
+.header-btn {
+	@include paddingHorizontal(0.9375rem, 0.9375rem);
 }
 
 /*---SERVICES---*/
 .services {
 	color: $colorDarkGray;
 	div {
-		padding-right: 0.9375rem;
-	  padding-left: 0.9375rem;
+		@include paddingHorizontal(0.9375rem, 0.9375rem);
 	}
 	span {
 		border: 1px solid $colorVeryLightGray;
@@ -181,9 +165,7 @@ h4 {
 /*---NEWSLETTER---*/
 
 .newsletter {
-	background: url("../img/newsletter-background.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+		@include imgBackground("../img/newsletter-background.jpg");
 		.flex-container {
 			justify-content: center;
 		}
@@ -191,26 +173,10 @@ h4 {
 			background-color: $colorOrange;
 			margin-bottom: 0;
 		}
+		input {
+			@include inputs;
+		}
 
-
-}
-
-.newsletter input, .contact input, .contact textarea {
-	box-sizing: border-box;
-    width: 100%;
-    height: 2.4375rem;
-    margin: 0 0 1rem;
-    padding: 0.5rem;
-    padding-left: 15px;
-    border: 1px solid $colorLightGray;
-    background-color: $colorDirtyWhite;
-    box-shadow: inset 0 1px 2px rgb(10, 10, 10);
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.5;
-    color: $colorBlack;
-    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
-    appearance: none;
 }
 
 /*---WORKS---*/
@@ -218,8 +184,7 @@ h4 {
 	color: $colorDarkGray;
 	.items {
 		width: 100%;
-		padding-right: 0.9375rem;
-		padding-left: 0.9375rem;
+		@include paddingHorizontal(0.9375rem, 0.9375rem);
 		box-sizing: border-box;
 		float: left;
 	}
@@ -229,8 +194,7 @@ h4 {
 		h3 {
 			font-size: 1.1875rem;
 		    line-height: 1.4;
-		    margin-top: 0;
-		    margin-bottom: 0.5rem;
+				@include marginVertical(0, 0.5rem);
 		}
 		a {
 			margin-bottom: 0;
@@ -248,8 +212,7 @@ h4 {
 			width: 100%;
 			transition: .5s ease;
 		    opacity: 0;
-		    padding-left: 10px;
-		    padding-right: 10px;
+		    @include paddingHorizontal(10px, 10px);
 		    position: absolute;
 		    top: 50%;
 		    left: 50%;
@@ -279,9 +242,7 @@ h4 {
 
 /*---CLIENTS---*/
 .clients {
-		background: url("../img/testimonials-background.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+		@include imgBackground("../img/testimonials-background.jpg");
     .arrows {
 			padding: 1rem;
 			img {
@@ -310,8 +271,7 @@ h4 {
 	}
 	.person {
 		width: 240px;
-		padding-left: 10px;
-		padding-right: 10px;
+		@include paddingHorizontal(10px, 10px);
 		filter: grayscale(1);
 		h3 {
 			text-transform: uppercase;
@@ -359,15 +319,17 @@ h4 {
 
 /*---CONTACTS---*/
 .contact {
-	background: url("../img/contact-background.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
+	@include imgBackground("../img/contact-background.jpg");
+	input {
+		@include inputs;
+	}
 	h4 {
 		font-weight: 600;
 	}
 	form {
 		flex-flow: wrap;
 		input {
+			@include inputs;
 			padding-left: 15px;
 			margin-bottom: 2rem;
 		}
@@ -384,6 +346,7 @@ h4 {
 		width: 100%;
 	}
 	textarea {
+		@include inputs;
 		height: auto;
 		max-width: 100%;
 		padding-left: 15px;
@@ -396,5 +359,6 @@ footer {
 	display: block;
 	p {
 		margin-bottom: 0;
+		@include paddingHorizontal(0.9375rem, 0.9375rem);
 	}
 }
